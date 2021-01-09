@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Blog Post</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -25,6 +25,14 @@
     <!-- Add your site or application content here -->
     <header>
       <h1>Our HTML5 site</h1>
+      <script>
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+      </script>
+      <p id="date"></p>
       <nav>
         <ul>
           <li><a href="#">Nav Item#1</a></li>
@@ -76,24 +84,11 @@
       <form action="">
         <input type="number" min="10" max="99999" />
         <input type="range" min="10" max="100" value="50" />
-        <script>
-          n = new Date();
-          y = n.getFullYear();
-          m = n.getMonth() + 1;
-          d = n.getDate();
-          document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-        </script>
-        <p id="date"></p>
+        <input type="date" value="2021-01-08" min"2019-12-31">
+        <input type="color" />
       </form>
     </main>
-    <script>
-      n = new Date();
-      y = n.getFullYear();
-      m = n.getMonth() + 1;
-      d = n.getDate();
-      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-    </script>
-    <p id="date"></p>
+
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
