@@ -67,15 +67,33 @@
           <footer><p>Meta Data</p></footer>
         </header>
         <figure>
-          <img
-            src="https://baconmockup.com/640/360
-          "
-            alt="placeholder"
-          />
-          <figcaption>"A nice picture of meat."</figcaption>
+          <img src="https://baconmockup.com/200/200/" alt="placeholder" />
+          <img src="https://baconmockup.com/200/200/" alt="placeholder" />
+          <figcaption>"Nice pictures of meat."</figcaption>
         </figure>
       </article>
+      <!--Forms-->
+      <form action="">
+        <input type="number" min="10" max="99999" />
+        <input type="range" min="10" max="100" value="50" />
+        <script>
+          n = new Date();
+          y = n.getFullYear();
+          m = n.getMonth() + 1;
+          d = n.getDate();
+          document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+        </script>
+        <p id="date"></p>
+      </form>
     </main>
+    <script>
+      n = new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
+    <p id="date"></p>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
